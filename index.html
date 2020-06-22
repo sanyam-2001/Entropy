@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entropy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fixed">
+        <header>
+            <div class="title">
+                <i class="fas fa-random"></i>
+                <h1>Entropy</h1>
+            </div>
+            <ul class="uno">
+                <li><a href="#one-dice">Dice</a></li>
+                <li><a href="#one-coin">Coin</a></li>
+                
+               
+            </ul>
+        </header>
+        <div id="loader"></div>
+    </div>
+    <div class="filler"></div>
+
+
+    <div class="about">
+        <ul>
+            <li id="left">A<span style="background-color: rgb(40, 88, 233);">BOUT</span></li>
+            <li id="right"><span style="background-color: rgb(40, 88, 233);">ENTR</span>OPY</li>
+        </ul>    
+    </div>
+    
+
+    <div class="about-text" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="1800">
+        <p>Entropy is a randomiser App. Sometimes we find ourselves in a position when we require random things in our lives like a flip of a coin or a throw of a die and we almost never have the aforementioned on us. This app will serve the purpose. With each Roll of the die and flip of a virtual coin, you contribute to the universe by Increasing its entropy and you contribute to us by using our product. The randomiser employed in this App is completely impartial, and will give out random outputs each time. There is no cap on how many times you use the app thus making it a user-friendly product. It is also mobile friendly and very lightweight so that you are never kept from these trivial facilities. </p>
+    </div>
+
+    <div class="options">
+        <div class="dice" data-aos="flip-up" data-aos-delay="200">
+            <a href="#one-dice"><div class="overlay">
+                <div class="overlay-text">Dice</div>
+            </div></a>
+        </div>
+        <div class="coin" data-aos="flip-up" data-aos-delay="200">
+            <a href="#one-coin"><div class="overlay">
+                <div class="overlay-text">Coin</div>
+            </div></a>
+        </div>
+        
+    </div>
+
+    <span id="one-dice">>></span>
+    <div class="one" data-aos="flip-down">
+        <div class="h">Roll A Dice</div>
+        <div class="output"><h1 id="dieroll">-</h1></div>
+        <div class="submit" id="diesubmit"><button>Roll It!</button></div>
+    </div>
+
+    <span id="one-coin">>></span>
+    <div class="one" data-aos="flip-down">
+        <div class="h">Flip A Coin</div>
+        <div class="output"><h1 id="flipcoin" style="font-size: 20px; top: 40%;">-</h1></div>
+        <div class="submit" id="coinsubmit"><button>Flip It!</button></div>
+    </div>
+
+   
+
+
+
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
